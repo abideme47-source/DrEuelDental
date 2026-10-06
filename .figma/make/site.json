@@ -1,0 +1,10 @@
+{
+  "description": "Transform Figma designs into clean, responsive code effortlessly, catering to developers and designers seeking efficient workflow and seamless integration.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

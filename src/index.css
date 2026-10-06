@@ -1,0 +1,146 @@
+@import 'tailwindcss';
+
+@font-face {
+  font-family: 'Archivo:ExtraBold';
+  src: url('https://static.figma.com/font/Archivo_wdth_wght__1') format('woff2');
+  font-style: normal;
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'Archivo:Italic';
+  src: url('https://static.figma.com/font/Archivo-Italic_wdth_wght__1') format('woff2');
+  font-style: italic;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Archivo:Regular';
+  src: url('https://static.figma.com/font/Archivo_wdth_wght__1') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Archivo:SemiBold';
+  src: url('https://static.figma.com/font/Archivo_wdth_wght__1') format('woff2');
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Arimo:Regular';
+  src: url('https://static.figma.com/font/Arimo_wght__1') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Font Awesome 5 Brands:Regular';
+  src: url('https://static.figma.com/font/Font%20Awesome%205%20Brands-Regular-400_1') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Font Awesome 5 Free:Solid';
+  src: url('https://static.figma.com/font/Font%20Awesome%205%20Free-Solid-900_1') format('woff2');
+  font-style: normal;
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: 'Inter:Regular';
+  src: url('https://static.figma.com/font/Inter_1') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Manrope:Bold';
+  src: url('https://static.figma.com/font/Manrope_wght__1') format('woff2');
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Manrope:ExtraBold';
+  src: url('https://static.figma.com/font/Manrope_wght__1') format('woff2');
+  font-style: normal;
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'Noto Sans Arabic:Regular';
+  src: url('https://static.figma.com/font/NotoSansArabic-VF_2') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Noto Sans JP:Regular';
+  src: url('https://static.figma.com/font/NotoSansJP-VF_2') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+}
+
+:root {
+  background: #ffffff;
+  color: #000a2d;
+  font-synthesis: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+[data-scroll-animate] {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+[data-scroll-animate].scroll-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+[data-scroll-animate="left"] {
+  transform: translateX(-30px);
+}
+
+[data-scroll-animate="left"].scroll-visible {
+  transform: translateX(0);
+}
+
+[data-scroll-animate="right"] {
+  transform: translateX(30px);
+}
+
+[data-scroll-animate="right"].scroll-visible {
+  transform: translateX(0);
+}
+
+[data-scroll-animate="down"] {
+  transform: translateY(-30px);
+}
+
+[data-scroll-animate="down"].scroll-visible {
+  transform: translateY(0);
+}
+
+[data-name='a'],
+[data-name*='button'],
+[data-name='li.elementor-icon-list-item'] {
+  cursor: pointer;
+}
